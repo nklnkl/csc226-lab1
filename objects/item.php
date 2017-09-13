@@ -61,6 +61,10 @@
 			$this->unit = $unit;
 		}
 
+		public function getPriceString () {
+			return "$" . number_format($this->price, 2);
+		}
+
 		public function getCategoryString () {
 			switch ($this->category) {
 				case 0: return "toy";
