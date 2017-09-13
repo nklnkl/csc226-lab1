@@ -50,13 +50,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>name</td>
-          <td>price</td>
-          <td>
-            <input type="number" /> unit
-          </td>
-        </tr>
+        <?php foreach($inventory as $item): ?>
+          <tr>
+            <td><? echo $item->getName();?></td>
+            <td><? echo $item->getPrice();?></td>
+            <td>
+              <input type="number" /> <? echo $item->getUnitString();?>(s)
+            </td>
+          </tr>
+        <?php endforeach;?>
       </tbody>
     </table>
 
