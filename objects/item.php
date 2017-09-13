@@ -21,9 +21,6 @@
 		 */
 		private $unit;
 
-		// (int)
-		private $quantity;
-
 		public function getName () {
 			return $this->name;
 		}
@@ -38,9 +35,6 @@
 		}
 		public function getUnit () {
 			return $this->unit;
-		}
-		public function getQuantity () {
-			return $this->quantity;
 		}
 
 		public function setName ($name) {
@@ -57,9 +51,6 @@
 		}
 		public function setUnit ($unit) {
 			$this->unit = $unit;
-		}
-		public function setQuantity ($quantity) {
-			$this->quantity = $quantity;
 		}
 
 		public function getCategoryString () {
