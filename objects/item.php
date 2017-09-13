@@ -21,6 +21,14 @@
 		 */
 		private $unit;
 
+		function Item ($name, $price, $category, $flavor, $unit) {
+			$this->setName($name);
+			$this->setPrice($price);
+			$this->setCategory($category);
+			$this->setFlavor($flavor);
+			$this->setUnit($unit);
+		}
+
 		public function getName () {
 			return $this->name;
 		}
@@ -46,7 +54,7 @@
 		public function setCategory ($category) {
 			$this->category = $category;
 		}
-		public function setFlavr ($flavor) {
+		public function setFlavor ($flavor) {
 			$this->flavor = $flavor;
 		}
 		public function setUnit ($unit) {
