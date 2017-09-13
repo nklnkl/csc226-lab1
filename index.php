@@ -19,17 +19,17 @@
   7.50, 0, null, 0));
   array_push($inventory, new Item("KONG Squirrel Cat Nip Toy",
   7.50, 0, null, 0));
-  array_push($inventory, new Item("Blue Buffalo, Blue Wilderness Indoor Adult Cat Food",
+  array_push($inventory, new Item("Blue Buffalo, Blue Wilderness Indoor Adult Cat Food, 11 pounds",
   33.99, 1, "Chicken", 1));
-  array_push($inventory, new Item("Nutro Max Kitten Food",
+  array_push($inventory, new Item("Nutro Max Kitten Food, 16 pounds",
   24.50, 1, "Roasted Chicken", 1));
-  array_push($inventory, new Item("Blue Buffalo, Blue Life Protection Formula Puppy Food",
+  array_push($inventory, new Item("Blue Buffalo, Blue Life Protection Formula Puppy Food, 30 pounds",
   45.99, 1, "Chicken & Brown Rice", 1));
-  array_push($inventory, new Item("Eukanuba Adult Maintenance Dog Food",
+  array_push($inventory, new Item("Eukanuba Adult Maintenance Dog Food, 30 pounds",
   33.99, 1, "Lamb & Rice", 1));
-  array_push($inventory, new Item("Cesar Savory Delights Adult Dog Food",
+  array_push($inventory, new Item("Cesar Savory Delights Adult Dog Food, 1 can",
   0.75, 2, null, 2));
-  array_push($inventory, new Item("Fancy Feast Classic Adult Cat Food",
+  array_push($inventory, new Item("Fancy Feast Classic Adult Cat Food, 1 can",
   0.59, 2, null, 2));
 ?>
 
@@ -55,7 +55,7 @@
             <td><? echo $item->getName();?></td>
             <td><? echo $item->getPriceString();?></td>
             <td>
-              <input type="number" value="0" /> <? echo $item->getUnitString();?>(s)
+              <input type="number" value="0" /> unit(s)
             </td>
           </tr>
         <?php endforeach;?>
