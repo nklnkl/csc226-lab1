@@ -36,10 +36,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="script.js"></script>
   </head>
 
-  <body>
+  <body class="container-fluid">
 
     <table class="table">
       <thead>
@@ -62,7 +64,41 @@
       </tbody>
     </table>
 
-    <input type="submit" />
+    <section class="row">
+      <form class="col-xs-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="radio">
+          <label><input type="radio" name="customer">New customer</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="customer">Returning customer</label>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" class="form-control" id="address">
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city">
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" id="state">
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zipcode:</label>
+          <input type="text" class="form-control" id="zipcode">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </section>
 
   </body>
 </html>
