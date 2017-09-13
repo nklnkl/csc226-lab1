@@ -3,6 +3,8 @@
 		// Should be of type array.
 		private $items;
 
+		private $date;
+
     private $shippingFee = 10;
 
     // 0: new customer, 1: returning customer;
@@ -12,12 +14,23 @@
 			return $this->items;
 		}
 
+		public function getDate () {
+			return $this->date;
+		}
+
     public function getCustomer () {
       return $this->customer;
     }
 
 		public function setItems ($items) {
 			$this->items = items;
+		}
+
+		public function setDate ($date) {
+			if ($date != null)
+				$this->date = $date
+			else
+				$this->date = date('H:i, jS F Y');
 		}
 
     public function setCustomer ($customer) {
