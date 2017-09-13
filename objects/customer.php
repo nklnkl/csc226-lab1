@@ -79,7 +79,7 @@
     }
 
     public function getFullAddress () {
-      return $this->address . ", " . $this->city . " " $this->state . " " . $this->zipcode;
+      return $this->address . ", " . $this->city . " " . $this->state . " " . $this->zipcode;
     }
   }
 ?>

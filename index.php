@@ -14,7 +14,7 @@
     6: Cesar Savory Delights Adult Dog Food, Wet, 1 Can (Retail Price: $0.75)
     7: Fancy Feast Classic Adult Cat Food, Wet, 1 Can (Retail Price: $0.59)
   */
-  $inventory = [];
+  $inventory = array();
   array_push($inventory, new Item("KONG Plush Rosie the Rhino Squeaker Dog Toy",
   7.50, 0, null, 0));
   array_push($inventory, new Item("KONG Squirrel Cat Nip Toy",

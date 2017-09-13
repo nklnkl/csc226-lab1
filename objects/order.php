@@ -28,7 +28,7 @@
 
 		public function setDate ($date) {
 			if ($date != null)
-				$this->date = $date
+				$this->date = $date;
 			else
 				$this->date = date('H:i, jS F Y');
 		}
@@ -46,7 +46,7 @@
     }
 
     public function clearItems () {
-      unset($this-items);
+      unset($this->items);
     }
 
     public function getSubtotal () {
