@@ -1,7 +1,7 @@
 <?php
-  require 'customer.php';
-  require 'item.php';
-  require 'order.php';
+  require 'objects/customer.php';
+  require 'objects/item.php';
+  require 'objects/order.php';
 
   /*
     Generate store inventory.
