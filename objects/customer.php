@@ -4,7 +4,6 @@
     private $password;
     private $firstName;
     private $lastName;
-    private $type; // 0: new customer, 1: returning customer.
     private $address;
     private $city;
     private $state;
@@ -21,9 +20,6 @@
     }
     public function getLastName () {
       return $this->lastName;
-    }
-    public function getType () {
-      return $this->type;
     }
     public function getAddress () {
       return $this->address;
@@ -50,9 +46,6 @@
     public function setLastName ($lastName) {
       $this->lastName = $lastName;
     }
-    public function setType ($type) {
-      $this->type = $type;
-    }
     public function setAddress ($address) {
       $this->address = $address;
     }
@@ -64,14 +57,6 @@
     }
     public function setZipcode ($zipcode) {
       $this->zipcode = $zipcode;
-    }
-
-    public function getTypeString () {
-      switch ($this->type) {
-        case 0: return "new customer";
-        case 1: return "returning customer";
-        default: return "error";
-      }
     }
 
     public function getFullName () {
