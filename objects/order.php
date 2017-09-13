@@ -53,9 +53,23 @@
       $total = 0;
 
       // Loop through each item and add to the sum.
-      foreach ($this-items as $item) {
+      foreach ($this->items as $item) {
         $total += $item->getPrice();
       }
+
+			// Loop through each item counting each wet food, and adding
+			// appropriate discounts.
+			$wet = 0;
+			foreach ($this->items as $item) {
+				if ($item->getCategory() == 2)
+					$wet += 1;
+			}
+			if ($wet <= 5 && $wet >= 10)
+				$total -= (0.03 * $wet);
+			if ($wet <= 11 && $wet >= 15)
+				$total -= (0.04 * $wet);
+			if ($wet <= 16)
+				$total -= (0.05 * $wet);
 
       // Add discount based on customer type.
       switch ($this->customer->getType()) {
