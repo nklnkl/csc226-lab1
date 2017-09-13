@@ -1,15 +1,19 @@
 <?php
 	class Item {
-		// Should be of type string.
+		// (string)
 		private $name;
 
-		// Should be of type float.
+		// (float)
 		private $price;
 
-		// 0: toy, 1: dry food, 2: wet food
+		// (int) 0: toy, 1: dry food, 2: wet food
 		private $category;
 
-		/*
+		// (string) Flavor of food, should only really be used with dry or
+		// wet food category items.
+		private $flavor;
+
+		/* (int)
 		 * The type of quantity this item has.
 		 * 0: unit, no label
 		 * 1: pound
@@ -17,7 +21,7 @@
 		 */
 		private $unit;
 
-		// Should be of type integer.
+		// (int)
 		private $quantity;
 
 		public function getName () {
@@ -28,6 +32,9 @@
 		}
 		public function getCategory () {
 			return $this->category;
+		}
+		public function getFlavor () {
+			return $this->flavor;
 		}
 		public function getUnit () {
 			return $this->unit;
@@ -44,6 +51,9 @@
 		}
 		public function setCategory ($category) {
 			$this->category = $category;
+		}
+		public function setFlavr ($flavor) {
+			$this->flavor = $flavor;
 		}
 		public function setUnit ($unit) {
 			$this->unit = $unit;
