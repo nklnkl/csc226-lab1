@@ -43,6 +43,15 @@
 
   <body class="container-fluid">
 
+    <div class="jumbotron">
+      <h1>Mr. Pete's Pet Shop</h1>
+      <p>
+        Free shipping on all orders over $50!
+        Orders that have a combination of kitten/adult dog OR adult cat/puppy
+        food (DRY food only), get a KONG Rhino Squeaker Dog Toy FREE!
+      </p> 
+    </div>
+
     <table class="table">
       <thead>
         <tr>
@@ -67,34 +76,34 @@
     <section class="row">
       <form class="col-xs-12 col-md-6 col-lg-4 col-xl-2">
         <div class="radio">
-          <label><input type="radio" name="customer">New customer</label>
+          <label><input type="radio" checked name="customer" id="returning-customer">Returning customer</label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="customer">Returning customer</label>
+          <label><input type="radio" name="customer" id="new-customer">New customer</label>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="email">
           <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="password">
           <label for="password">Password:</label>
-          <input type="password" class="form-control" id="password">
+          <input type="password" class="form-control">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="address">
           <label for="address">Address:</label>
-          <input type="text" class="form-control" id="address">
+          <input type="text" class="form-control">
         </div>
-        <div class="form-group">
+        <div class="form-group"  id="city">
           <label for="city">City:</label>
-          <input type="text" class="form-control" id="city">
+          <input type="text" class="form-control">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="state">
           <label for="state">State:</label>
-          <input type="text" class="form-control" id="state">
+          <input type="text" class="form-control">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="zipcode">
           <label for="zipcode">Zipcode:</label>
-          <input type="text" class="form-control" id="zipcode">
+          <input type="text" class="form-control">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
